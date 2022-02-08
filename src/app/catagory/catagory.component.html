@@ -1,0 +1,18 @@
+<div class="catagory">
+  <button
+    appHighlight
+    class="btn catagoryBtn"
+    [ngStyle]="{ color: currentCatagory == 'active' ? 'blue' : 'grey' }"
+    (click)="onSelectCatagory('active')"
+  >
+    active
+  </button>
+  <button
+    appHighlight
+    class="btn catagoryBtn"
+    [ngStyle]="{ color: currentCatagory == 'done' ? 'blue' : 'grey' }"
+    (click)="onSelectCatagory('done')"
+  >
+    Completed
+  </button>
+</div>

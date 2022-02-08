@@ -1,0 +1,11 @@
+
+.catagory{
+    display: flex;
+    justify-content: center;
+}
+.catagoryBtn{
+    color: gray;
+    width: 49%;
+    font-size: 2rem;
+    font-weight: 500;
+}

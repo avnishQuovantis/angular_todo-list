@@ -1,0 +1,19 @@
+<div class="input-group mb-3 inputField">
+  <input
+    type="text"
+    class="form-control"
+    placeholder="enter notes"
+    aria-label="Recipient's username"
+    aria-describedby="button-addon2"
+    #noteInput
+  />
+  <button
+    class="btn btn-primary"
+    type="button"
+    id="button-addon2"
+    (click)="addNote()"
+    [disabled]="noteInput == undefined"
+  >
+    Button
+  </button>
+</div>

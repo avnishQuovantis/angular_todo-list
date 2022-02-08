@@ -1,0 +1,28 @@
+<div
+  class="noteItem"
+  *ngIf="noteCatagory === 'active' && note.type === 'active'"
+>
+  <div class="noteId">
+    <i class="fas fa-chevron-right"></i>
+  </div>
+  <div class="noteDescription">{{ note.description }}</div>
+  <div class="noteButtons">
+    <button class="btn btn-warning" (click)="doneTask(note.id)">
+      <i class="fas fa-check"></i>
+    </button>
+    <button class="btn btn-danger" (click)="deleteTask(note.id)">
+      <i class="fas fa-trash-alt"></i>
+    </button>
+  </div>
+</div>
+<div class="noteItem" *ngIf="noteCatagory === 'done' && note.type === 'done'">
+  <div class="noteId done">
+    <i class="fas fa-check"></i>
+  </div>
+  <div class="noteDescription">{{ note.description }}</div>
+  <div class="noteButtons">
+    <button class="btn btn-danger" (click)="deleteTask(note.id)">
+      <i class="fas fa-trash-alt"></i>
+    </button>
+  </div>
+</div>

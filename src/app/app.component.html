@@ -1,0 +1,10 @@
+<div class="nav navbar bg-dark"></div>
+<div class="container todoContainer">
+  <app-input-field></app-input-field>
+  <div class="noteContainer">
+    <app-catagory></app-catagory>
+  </div>
+  <div class="noteContainer">
+    <app-notes *ngFor="let notes of allNotes" [note]="notes"></app-notes>
+  </div>
+</div>
